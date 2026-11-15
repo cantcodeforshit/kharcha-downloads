@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kharcha for Windows and Mac</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-os="win">
+<main>
+  <a class="brand" href="./"><img src="favicon.svg" alt=""><span>Kharcha</span></a>
+  <h1>Get Kharcha</h1>
+  <p class="lead">See where your money goes, from your own bank statements. Everything stays on your computer. Nothing is uploaded.</p>
+
+  <div class="cards">
+    <div class="card" id="card-mac">
+      <div class="tag" id="tag-mac" hidden>Looks like your computer</div>
+      <div class="big">🍎</div><h3>Mac</h3><p>Apple chip (2020 or later)</p>
+      <a class="dl" id="dl-mac" href="#">⬇ Download for Mac</a>
+      <p class="mini" id="intel" hidden>Older Intel Mac? <a id="intel-link" href="#">Get the Intel version</a></p>
+    </div>
+    <div class="card" id="card-win">
+      <div class="tag" id="tag-win" hidden>Looks like your computer</div>
+      <div class="big">🪟</div><h3>Windows</h3><p>Windows 10 or 11</p>
+      <a class="dl" id="dl-win" href="#">⬇ Download for Windows</a>
+    </div>
+  </div>
+  <div class="dl-sub" id="status">Checking the latest version…</div>
+
+  <div class="notice"><strong>Heads-up:</strong> the first time you open Kharcha, your computer will show a warning. That is normal for apps that aren't from an app store, and the steps below take about 30 seconds. You only do this once.</div>
+
+  <div class="tabs"><button id="tab-mac">I have a Mac</button><button id="tab-win">I have Windows</button></div>
+
+  <section id="steps-mac">
+    <ol class="steps">
+      <li>Open the downloaded file <span class="ui">Kharcha-mac-apple-silicon.dmg</span> (it's in your <em>Downloads</em> folder), then <strong>drag Kharcha onto Applications</strong>.</li>
+      <li>Open <strong>Kharcha</strong> from your Applications folder. A box says <strong>“Kharcha” Not Opened</strong>. Click <span class="ui">Done</span>.<small>Don't click “Move to Bin”.</small></li>
+      <li>Open <span class="ui">Apple menu  → System Settings → Privacy &amp; Security</span>, then <strong>scroll down</strong> to the <strong>Security</strong> section. Next to <em>“Kharcha” was blocked to protect your Mac</em>, click <span class="ui">Open Anyway</span> and enter your Mac password (or use Touch ID). Click <span class="ui">Open Anyway</span> once more if asked.</li>
+      <li>Kharcha opens in your web browser. From now on, just double-click it like any other app.</li>
+    </ol>
+    <details><summary>I don't see the “Open Anyway” button</summary><p>It only appears for about an hour after you try to open the app. Double-click Kharcha in Applications again (click Done on the box), then go straight back to Privacy &amp; Security and scroll down.</p></details>
+    <details><summary>It says Kharcha is “damaged” or “can't be opened”</summary><p>Delete the app from Applications (and the Bin), download it again with the button above, and repeat the steps. If it still fails, send Sylvin a screenshot.</p></details>
+    <details><summary>How do I know if my Mac has an Apple chip?</summary><p>Apple menu → About This Mac. If it says “Chip: Apple M…”, use the Mac download. If it says Intel, look for the “Older Intel Mac” link under the Mac button, or message Sylvin.</p></details>
+  </section>
+
+  <section id="steps-win" hidden>
+    <ol class="steps">
+      <li>Click the download button. If your browser says the file <strong>“isn't commonly downloaded”</strong> or <strong>“could harm your device”</strong>:
+        <small><strong>Edge:</strong> click the <span class="ui">…</span> next to the file → <span class="ui">Keep</span> → <span class="ui">Keep anyway</span>.<br><strong>Chrome:</strong> click the <span class="ui">⋮</span> or arrow next to the file → <span class="ui">Keep</span> (then <span class="ui">Keep anyway</span> if asked).</small></li>
+      <li>Open your <strong>Downloads</strong> folder and double-click <span class="ui">Kharcha-windows.exe</span>. The first start takes about 10 seconds. Please wait.</li>
+      <li>A blue box says <strong>“Windows protected your PC”</strong>. Click <span class="ui">More info</span>, then click <span class="ui">Run anyway</span>.<small>The “Run anyway” button only appears after you click “More info”.</small></li>
+      <li>Kharcha opens in your web browser. From now on, just double-click it. You can drag it to your Desktop for easy access.</li>
+    </ol>
+    <details><summary>Nothing happens after I double-click</summary><p>Give it 10–20 seconds the first time. If your browser still doesn't open, open <strong>http://localhost:8765</strong> in your browser.</p></details>
+    <details><summary>My antivirus deleted or blocked the file</summary><p>New, unsigned apps are sometimes flagged by mistake. Restore it from the antivirus “quarantine” and choose “allow”, or ask Sylvin for help.</p></details>
+  </section>
+
+  <h2>Questions</h2>
+  <details><summary>Is it safe?</summary><p>Kharcha runs only on your own computer and reads only the statement files you give it. It has no accounts and no cloud, and it never sends your data anywhere. The warning appears because Apple and Microsoft charge a yearly fee to “verify” apps, and this one hasn't paid it yet.</p></details>
+  <details><summary>How do I close it?</summary><p>Close the browser tab. Kharcha stops by itself about a minute later. Or use <em>Settings → Data &amp; reset → Quit Kharcha</em> inside the app.</p></details>
+  <p class="foot">Shared privately by a friend. Questions? Send them a message.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
